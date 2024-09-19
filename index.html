@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container-fluid bg-dark  p-5 text-center ">
+        <h1 class="text-white ">Check Your BMI</h1>
+        <h5 class="text-success  p-3">Enter your weight and your height below ro check your BMI result</h5>
+
+        <div class="input-container text-center pb-3">
+          <label for="height" class="text-white mb-3 ">put your weight here</label>
+          <input class="height form-control"  type="name" onblur="validateHeight()" id="weight" placeholder="Weight (kg)">
+        </div>
+        <div class="input-container text-center pb-3">
+          <label for="weight" class="text-white mb-3">put yout height here </label>
+          <input class="weight form-control" type="name"  onblur="validateWeight()" id="height" placeholder="Height (cm)">
+        </div>
+        
+        <button class="calculate btn btn-success "> Calculate</button>
+        <div class="result text-white"></div>
+      </div>
+     
+    
+
+      
+
+
+    <script src="main.js"></script>
+</body>
+</html>
